@@ -7,7 +7,7 @@ const Contact = () => {
         <div>
             <Logo/>
             <Navigation />
-            <Form></Form>
+    
         </div>
     );
 };
