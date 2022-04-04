@@ -1,0 +1,66 @@
+
+.form {
+    display: flex;
+    justify-content: center;
+    background: url(../../assets/img/main.jpg) center/cover;;
+    /*align-items: center;
+    align-content: center;*/
+}
+
+.element {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+    padding:5px;
+    height: 160px;
+    border-radius:  5px;
+    border: 1px solid $color-1;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.307);
+
+
+    background-color:$color-1;
+    color: $color-2;
+    width: 410px;
+    
+    .button {
+        //@include verticalCenter;
+       margin: 5px auto;
+       width: 100px;
+       border-radius: 20px;
+       padding: 5px 0;
+       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.307);
+       size: 20px;
+       background: $color-2;
+       color:  $color-1;
+   
+       img {
+           height: 40px;
+       }
+   }
+   
+    .objet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "a b"
+            "c d";
+
+        width: 100%;
+
+        .label1 {
+            grid-area: a;
+            margin-left: 112px;
+         }
+        .label2 {
+            grid-area: c;
+        }
+
+       .input1 {
+            grid-area: b;
+        }
+        .input2 {
+            grid-area: d;
+        }
+    }}
