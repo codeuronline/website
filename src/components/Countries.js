@@ -3,7 +3,7 @@ import axios from "axios";
 import Card from "../components/Card";
 
 const Countries = () => {
-    const [data, setData] = useState([]);
+     const [data, setData] = useState([]);
     const [rangeValue, setRangeValue] = useState(36);
     const radios = ["Africa", "America", "Asia", "Europe", "Oceania"];
     const [selectedRadio, setSelectedRadio] = useState("");
@@ -22,7 +22,7 @@ const Countries = () => {
                     min="1"
                     max="250"
                     defaultValue={rangeValue}
-                    onChange={(e) => setRangeValue(e.target.value)}                 
+                    onChange={(e) => setRangeValue(e.target.value)}
                 />
                 {radios.map((continent) => (
                     <li>
@@ -49,6 +49,7 @@ const Countries = () => {
                     .slice(0, rangeValue)
                     .map((country, index) => (
                         <Card key={index} country={country} />
+                      
                     ))}
             </ul>
         </div>

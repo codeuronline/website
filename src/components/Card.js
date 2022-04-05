@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Card = ({country}) => {
+
+const Card = ({ country }) => {
     return (
         <li className="card">
             <img
@@ -12,7 +13,8 @@ const Card = ({country}) => {
                 <h4>{country.capital}</h4>
                 <p>Pop. { country.population.toLocaleString()}</p>
             </div>
-        </li>
+          </li>
+        
     );
 };
 
