@@ -4,7 +4,7 @@ import Logo from "../components/Logo";
 
 const Contact = () => {
     return (
-        <div>
+        <div className='routeur'>
             <Logo/>
             <Navigation />
     

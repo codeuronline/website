@@ -4,7 +4,7 @@ import Logo from "../components/Logo";
 import Countries from '../components/Countries';
 const About = () => {
     return (
-        <div>
+        <div className='routeur'>
             <Logo />
             <Navigation />
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, corrupti?

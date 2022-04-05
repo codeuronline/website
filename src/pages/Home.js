@@ -5,10 +5,10 @@ import Navigation from '../components/Navigation';
 
 const Home = () => {
     return (
-        <div>
+        <div className='routeur'>
             <Logo/>
             <Navigation/>
-            <Countries/>          
+            <Countries />          
         </div>
     );
 };
