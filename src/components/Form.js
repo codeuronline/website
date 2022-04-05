@@ -1,6 +1,6 @@
 import React from 'react';
-import { toast, ToastContainer } from 'react-toastify';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Form = () => {
     const notify = () => { toast("hello") };    
@@ -15,12 +15,10 @@ const Form = () => {
                                 <input className='input2' type="password" /><br />
                                 <button className='button' onClick={notify} type="submit" >Valider</button>
                                 <button className='button' type="cancel" >Annuler</button>
-                        </h1>        
-                    <ToastContainer/>
+                        </h1>                      
                     </form>
+                    <ToastContainer/>
                 </div>    
-           
-            
     );
 };
 
